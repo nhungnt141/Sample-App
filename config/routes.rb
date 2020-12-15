@@ -7,5 +7,8 @@ Rails.application.routes.draw do
   get 'users/new', to: 'users#new'
   # get "/users/:id", to: "users#show"
   # post "/users", to: "users#index"
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
   resources :users
 end
