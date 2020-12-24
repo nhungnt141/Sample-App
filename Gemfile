@@ -5,6 +5,10 @@ ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
+gem 'aws-sdk-s3', require: false
+gem 'image_processing'
+gem 'mini_magick'
+gem 'active_storage_validations'
 # Use sqlite3 as the database for Active Record
 gem "bcrypt", "3.1.13"
 gem 'will_paginate'
@@ -53,6 +57,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing'
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
